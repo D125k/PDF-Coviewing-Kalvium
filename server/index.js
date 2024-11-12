@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 const app = express();
 const server = http.createServer(app);
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' ? 'https://your-frontend-url.com' : '*', // Replace with your actual frontend URL
+  origin: process.env.NODE_ENV === 'production' ? 'https://https://pdf-coviewing-kalvium.vercel.app' : '*', // Replace with your actual frontend URL
   methods: ['GET', 'POST']
 };
 
