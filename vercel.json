@@ -1,5 +1,6 @@
 {
-	"rewrites": [
-	  { "source": "/(.*)", "destination": "/" }
-	]
-  }
+  "rewrites": [
+    { "source": "/generate-session", "destination": "https://pdf-coviewing-kalvium.onrender.com/generate-session" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
