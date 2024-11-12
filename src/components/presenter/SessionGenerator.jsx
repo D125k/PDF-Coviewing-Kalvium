@@ -6,18 +6,22 @@ const SessionGenerator = () => {
 
 	// Example for generating session in the front-end code
 const generateSession = async () => {
-	try {
-	 	const response = await fetch('https://pdf-coviewing-kalvium.onrender.com/generate-session', {
-  		method: 'POST',
-  		headers: { 'Content-Type': 'application/json' },
-	});
-	  const data = await response.json();
-	  setSessionCode(data.sessionCode);
-	} catch (error) {
-	  console.error('Error generating session:', error);
-	  alert('Failed to generate session code. Please check the server connection.');
-	}
-  };
+  setLoading(true);
+  try {
+    const response = await fetch('https://pdf-coviewing-kalvium.onrender.com/generate-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    const data = await response.json();
+    setSessionCode(data.sessionCode);
+  } catch (error) {
+    console.error('Error generating session:', error);
+    alert('Failed to generate session code. Please check the server connection.');
+  } finally {
+    setLoading(false);
+  }
+};
+
 
 
 	return (
