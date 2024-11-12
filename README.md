@@ -2,8 +2,7 @@
 # Kalvium SWE Internship+PPO Task - PDF Co-Viewer
 
 **Position:** Software Engineer (Internship + PPO)  
-**Organization:** Kalvium, India's leader in computer science higher education  
-**Submission Date:** November 10, 2024
+**Organization:** Kalvium, India's leader in computer science higher education  \
 
 ## Project Description
 
