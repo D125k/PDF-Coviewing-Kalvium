@@ -7,10 +7,10 @@ const SessionGenerator = () => {
 	// Example for generating session in the front-end code
 const generateSession = async () => {
 	try {
-	  const response = await fetch('generate-session', {
-		method: 'POST',
-		headers: { 'Content-Type': 'application/json' },
-	  });
+	 	const response = await fetch('https://pdf-coviewing-kalvium.onrender.com/generate-session', {
+  		method: 'POST',
+  		headers: { 'Content-Type': 'application/json' },
+	});
 	  const data = await response.json();
 	  setSessionCode(data.sessionCode);
 	} catch (error) {
