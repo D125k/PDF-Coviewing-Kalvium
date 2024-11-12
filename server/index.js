@@ -22,6 +22,10 @@ const sessions = {};
 // Middleware to parse JSON
 app.use(express.json());
 
+app.get('/health', (req, res) => {
+  res.send('Server is alive');
+});
+
 // Endpoint to generate a new session code
 app.post('/generate-session', (req, res) => {
   const sessionCode = uuidv4();
