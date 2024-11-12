@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [react()],
 	server: {
 	  proxy: {
-		'/generate-session': 'http://localhost:3001',
+		'/generate-session': 'https://pdf-coviewing-kalvium.onrender.com',
 	  },
 	},
   });

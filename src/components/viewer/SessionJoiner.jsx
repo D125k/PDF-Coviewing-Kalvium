@@ -10,7 +10,7 @@ const SessionJoiner = ({ onJoin }) => {
 		setLoading(true);
 		setError(null);
 
-		const socket = io('http://localhost:3001');
+		const socket = io('https://pdf-coviewing-kalvium.onrender.com');
 
 		socket.emit('join_session', { sessionCode, isPresenter: false });
 
